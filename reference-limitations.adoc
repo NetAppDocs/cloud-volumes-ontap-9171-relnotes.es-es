@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, detaching, snapmanager, features, disks, aggregates, features, svm 
+summary: Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o que no interoperan correctamente con él. Revisa estas limitaciones cuidadosamente. 
+---
+= Limitaciones conocidas para Cloud Volumes ONTAP en todos los proveedores de nube
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o que no interoperan correctamente con él. Revisa estas limitaciones cuidadosamente.
+
+Las siguientes limitaciones se aplican a Cloud Volumes ONTAP en todos los proveedores de nube: AWS, Azure y Google Cloud.
+
+
+
+== Funciones de ONTAP no compatibles
+
+Las siguientes funciones no son compatibles con Cloud Volumes ONTAP:
+
+* Deduplicación en línea a nivel de agregado
+* Deduplicación en segundo plano a nivel de agregado
+* Centro de mantenimiento de discos
+* Saneamiento de disco
+* Duplicación de FabricPool
+* Fibre Channel (FC)
+* Flash Pools
+* Infinite Volumes
+* Grupos de interfaces
+* Conmutación por error de LIF intranodo
+* MetroCluster
+* Verificación multiadministrador
++
+Habilitar la verificación multiadministrador en Cloud Volumes ONTAP dará como resultado una configuración no compatible.
+
+* RAID4, RAID-DP, RAID-TEC (RAID0 es compatible)
+* Service Processor
+* SnapLock Compliance y Enterprise modes (sólo se admite Cloud WORM)
+* SnapMirror Synchronous
+* VLAN
+* Disponibilidad continua (CA) de SMB
++
+https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["Recursos compartidos SMB disponibles de forma continua"^] para operaciones no disruptivas no son compatibles.
+
+
+
+
+
+== Operaciones máximas de replicación simultáneas
+
+El número máximo de transferencias concurrentes de SnapMirror o SnapVault para Cloud Volumes ONTAP es 100 por nodo, sin importar el tipo de instancia o de máquina.
+
+
+
+== No debes usar las instantáneas del proveedor de la nube para tus planes de backup y recuperación
+
+No deberías usar las instantáneas de tu proveedor de cloud como parte de tu plan de backup y recuperación para los datos de Cloud Volumes ONTAP. Siempre deberías usar copias Snapshot de ONTAP o soluciones de backup de terceros para hacer backup y restaurar datos alojados en Cloud Volumes ONTAP.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Aprende cómo usar NetApp Backup and Recovery para hacer copias de seguridad y restaurar datos de ONTAP"^].
+
+
+NOTE: Los puntos de coherencia de ONTAP en el sistema de archivos WAFL determinan la coherencia de los datos. Solo ONTAP puede poner en reposo el sistema de archivos WAFL para hacer un backup coherente con los folles.
+
+
+
+== Cloud Volumes ONTAP solo admite instancias de VM reservadas y bajo demanda
+
+Cloud Volumes ONTAP puede ejecutarse en una instancia de VM reservada o bajo demanda de tu proveedor de cloud. Otros tipos de instancias de VM no son compatibles.
+
+
+
+== No deberías usar soluciones automáticas de gestión de recursos de las aplicaciones
+
+Las soluciones de gestión automática de recursos de aplicaciones no deben gestionar sistemas Cloud Volumes ONTAP. Hacerlo puede resultar en un cambio a una configuración no compatible. Por ejemplo, la solución podría cambiar Cloud Volumes ONTAP a un tipo de instancia de VM no compatible.
+
+
+
+== Las actualizaciones de software deben completarse por NetApp Console
+
+Las actualizaciones de Cloud Volumes ONTAP deben completarse desde la NetApp Console. No deberías actualizar Cloud Volumes ONTAP usando System Manager o la CLI. Hacerlo puede afectar la estabilidad del sistema.
+
+
+
+== La implementación de Cloud Volumes ONTAP no debe modificarse desde la consola de tu proveedor de servicios en la nube
+
+Los cambios realizados en una configuración de Cloud Volumes ONTAP desde la consola de tu proveedor de cloud generan una configuración no compatible. Cualquier cambio en los recursos de Cloud Volumes ONTAP que la Console crea y gestiona puede afectar la estabilidad del sistema y la capacidad de la Console para gestionar el sistema.
+
+
+NOTE: Después de la implementación inicial, se admite la modificación del nombre de Azure Subscription usado para los recursos Cloud Volumes ONTAP.
+
+
+
+== Los discos y agregados deben gestionarse desde la NetApp Console
+
+Todos los discos y agregados deben crearse y eliminarse directamente desde la NetApp Console. No deberías realizar estas acciones desde otra herramienta de gestión. Hacerlo puede afectar la estabilidad del sistema, dificultar la capacidad de agregar discos en el futuro y potencialmente generar tarifas redundantes del proveedor de la nube.
+
+
+
+== SnapManager limitación de licencias
+
+Las licencias por servidor de SnapManager son compatibles con Cloud Volumes ONTAP. Las licencias por sistema de almacenamiento (SnapManager suite) no son compatibles.
+
+
+
+== Limitaciones con agentes y extensiones de terceros
+
+Los agentes de terceros y las extensiones de VM no son compatibles con las instancias de máquina virtual de Cloud Volumes ONTAP.

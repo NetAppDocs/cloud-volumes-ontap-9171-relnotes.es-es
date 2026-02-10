@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Con el modelo de licencia basado en capacidad, cada sistema Cloud Volumes ONTAP admite el uso de niveles hacia almacenamiento de objetos. La capacidad total en niveles puede escalar hasta el límite de bucket del proveedor de la nube. Aunque la licencia no impone restricciones de capacidad, deberías seguir la  https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["FabricPool mejores prácticas"^] para asegurar un rendimiento, fiabilidad y eficiencia de costos óptimos al configurar y gestionar el tiering.
