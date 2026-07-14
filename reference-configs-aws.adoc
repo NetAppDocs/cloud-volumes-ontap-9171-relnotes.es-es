@@ -18,6 +18,7 @@ Se admiten varias configuraciones de Cloud Volumes ONTAP en AWS.
 
 
 
+[[supported-number-of-nodes]]
 == Número de nodos admitidos
 
 Cloud Volumes ONTAP está disponible en AWS como un sistema de nodo único y como un par de nodos de alta disponibilidad (HA) para tolerancia a fallos y operaciones sin interrupciones.
@@ -26,12 +27,14 @@ No se admite la actualización de un sistema de nodo único a un par de HA. Si q
 
 
 
+[[supported-storage]]
 == Almacenamiento compatible
 
 Cloud Volumes ONTAP admite varios tipos de discos EBS y almacenamiento de objetos S3 para la organización de datos por niveles. La capacidad máxima de almacenamiento está determinada por la licencia que elijas.
 
 
 
+[[storage-support-by-license]]
 === Soporte de almacenamiento por licencia
 
 Cada licencia admite una capacidad máxima del sistema diferente. La capacidad máxima del sistema incluye el almacenamiento basado en disco más el almacenamiento de objetos usado para la organización de datos por niveles. NetApp no admite que se supere este límite.
@@ -112,6 +115,7 @@ Notas:
 ====
 
 
+[[supported-disk-sizes]]
 === Tamaños de disco compatibles
 
 En AWS, un agregado puede contener hasta 6 discos que son todos del mismo tamaño. Pero si tienes una configuración que soporta la función Amazon EBS Elastic Volumes, entonces un agregado puede contener hasta 8 discos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Obtén más información sobre el soporte para Elastic Volumes"^]
@@ -154,13 +158,14 @@ En AWS, un agregado puede contener hasta 6 discos que son todos del mismo tamañ
 |===
 
 
+[[supported-ec2-compute]]
 == EC2 compute compatible
 
 Cada licencia de Cloud Volumes ONTAP admite distintos tipos de instancia de EC2. Para tu comodidad, la tabla siguiente muestra las vCPU, RAM y ancho de banda de cada tipo de instancia admitida. https://aws.amazon.com/ec2/instance-types/["Deberías consultar AWS para obtener los detalles más recientes y completos sobre los tipos de instancia EC2"^].
 
 Cloud Volumes ONTAP puede ejecutarse en una instancia EC2 reservada o bajo demanda. Las soluciones que usan otros tipos de instancia no son compatibles.
 
-Los anchos de banda mostrados en la siguiente tabla coinciden con los límites documentados de AWS para cada tipo de instancia. Estos límites no coinciden completamente con lo que Cloud Volumes ONTAP puede proporcionar. Para el rendimiento esperado, consulta https://www.netapp.com/pdf.html?item=/media/9088-tr4383pdf.pdf["NetApp Technical Report 4383: caracterización del rendimiento de Cloud Volumes ONTAP en Amazon Web Services con cargas de trabajo de aplicaciones"^].
+Los anchos de banda mostrados en la siguiente tabla coinciden con los límites documentados de AWS para cada tipo de instancia. Estos límites no coinciden completamente con lo que Cloud Volumes ONTAP puede proporcionar. Para el rendimiento esperado, consulta https://www.netapp.com/pdf.html?item=/media/9088-tr4383.pdf["NetApp Technical Report 4383: caracterización del rendimiento de Cloud Volumes ONTAP en Amazon Web Services con cargas de trabajo de aplicaciones"^].
 
 [cols="8*"]
 |===
@@ -257,6 +262,7 @@ La alta velocidad de escritura no es compatible con estos tipos de instancia en 
 
 
 
+[[c4-m4-and-r4-instances-no-longer-supported]]
 === Las instancias c4, m4 y r4 ya no son compatibles
 
 Cloud Volumes ONTAP ya no es compatible con los tipos de instancia c4, m4 y r4 de EC2 en AWS. Si tu sistema se ejecuta en una instancia c4, m4 o r4, cambia a una instancia c5, m5 o r5. No puedes actualizar a esta versión hasta que cambies el tipo de instancia.
@@ -272,6 +278,7 @@ Para más información, consulta:
 
 
 
+[[supported-regions]]
 == Regiones compatibles
 
 Para soporte de la región de AWS, consulta https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes regiones globales"^].

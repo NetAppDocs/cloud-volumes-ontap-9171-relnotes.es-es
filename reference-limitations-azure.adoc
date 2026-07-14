@@ -18,6 +18,7 @@ Las siguientes limitaciones conocidas son específicas de Cloud Volumes ONTAP en
 
 
 
+[[limitations-with-using-azure-vm-extensions]]
 == Limitaciones al usar las extensiones de Azure VM
 
 Cloud Volumes ONTAP no admite extensiones de máquinas virtuales (VM) de Azure porque afectan las operaciones de gestión en la NetApp Console. Durante la implementación, la NetApp Console impide la instalación de cualquier extensión en tus VM. Si ya tienes extensiones instaladas en tus VM de Cloud Volumes ONTAP existentes, ponte en contacto con Microsoft Azure Support para eliminarlas. Para orientación, consulta el artículo de la knowledge base (KB) https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Can_Azure_VM_Management_Extensions_be_installed_into_Cloud_Volume_ONTAP["¿Se pueden instalar extensiones de administración de máquinas virtuales de Azure en Cloud Volumes ONTAP?"^]
@@ -26,6 +27,7 @@ A partir del 14 de julio de 2025, NetApp enviará correos electrónicos y te not
 
 
 
+[[premium-ssd-v2-disks-limitations-for-ha-configurations]]
 == Limitaciones de los discos Premium SSD v2 para configuraciones de HA
 
 Los discos gestionados Premium SSD v2 tienen las siguientes limitaciones para implementaciones de alta disponibilidad (HA) en Azure:
@@ -46,6 +48,7 @@ Para más información, consulta https://docs.netapp.com/us-en/cloud-volumes-ont
 
 
 
+[[limitations-with-ha-deployments-in-single-availability-zones]]
 == Limitaciones con las implementaciones de HA en zonas de disponibilidad únicas
 
 A partir de Cloud Volumes ONTAP 9.15.1, puedes implementar instancias de máquina virtual (VM) en modo HA en zonas de disponibilidad (AZ) únicas en Azure. Para información sobre los criterios que admiten esta función, consulta https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-in-azure["Implementa pares de HA en zonas de disponibilidad únicas en Azure"^].
@@ -54,6 +57,7 @@ Si la versión de Cloud Volumes ONTAP es anterior a 9.15.1 o si no se cumple alg
 
 
 
+[[flash-cache-limitations]]
 == Limitaciones de Flash Cache
 
 Cloud Volumes ONTAP utiliza el almacenamiento local NVMe en algunos tipos de VM como _Flash Cache_. Ten en cuenta esta limitación:
@@ -63,6 +67,7 @@ Cloud Volumes ONTAP utiliza el almacenamiento local NVMe en algunos tipos de VM 
 
 
 
+[[limitations-with-ha-deployments]]
 == Limitaciones con las implementaciones en HA
 
 Los pares HA no son compatibles en algunas regiones.
