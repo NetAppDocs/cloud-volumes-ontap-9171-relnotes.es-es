@@ -890,4 +890,12 @@
   <block id="4d90d21642c7222312363da000d7409f" category="inline-link-macro">Ver la lista de errores corregidos en el parche P6</block>
   <block id="9cc7d1e306d6a5fe0c2d14528a2bbb0d" category="paragraph"><block ref="d1851ca2607b699d731598b241fc23ed" category="inline-link-macro-rx"></block> (NetApp se requiere inicio de sesión en Support Site).</block>
   <block id="fb83bdf454bf964031306f46d967b051" category="paragraph">Los anchos de banda mostrados en la siguiente tabla coinciden con los límites documentados de AWS para cada tipo de instancia. Estos límites no coinciden completamente con lo que Cloud Volumes ONTAP puede proporcionar. Para el rendimiento esperado, consulta<block ref="f9e25e1e3616de01564541c204317f8f" category="inline-link-rx"></block>.</block>
+  <block id="ebc5bc85cd8e1d6223d38c9aad3c412f" category="section-title">9.17.1 P8 (22 de julio de 2026)</block>
+  <block id="a84099fa788d91e90b8bb959420dd3e5" category="paragraph">El parche Cloud Volumes ONTAP 9.17.1 P8 ya está disponible para actualización en AWS, Azure y Google Cloud. La consola te pedirá que actualices tus sistemas actuales a esta versión del parche.</block>
+  <block id="a5757ef07045a814bda504c5b48177c6" category="inline-link-macro">Ver la lista de errores corregidos en el parche P8</block>
+  <block id="6eb6408c9647d70e42869f3ac16ba9f2" category="paragraph"><block ref="0251a500a7ed9a6fd48932be67a574a7" category="inline-link-macro-rx"></block> (NetApp se requiere inicio de sesión en Support Site).</block>
+  <block id="e0bfaffb846727a62feb2979fc671ac4" category="section-title">9.17.1 P7 (22 de julio de 2026)</block>
+  <block id="b55ddbbed17e1b675f73274aaa6f0d6a" category="paragraph">El parche Cloud Volumes ONTAP 9.17.1 P7 ya está disponible para actualización en AWS, Azure y Google Cloud. La consola te pedirá que actualices tus sistemas actuales a esta versión del parche.</block>
+  <block id="7fa6a95154192207488dcc8bf13f9366" category="inline-link-macro">Ver la lista de errores corregidos en el parche P7</block>
+  <block id="ffa667317f0f22f339073864b82c97a1" category="paragraph"><block ref="51c26b70c653c2083caab58aa2584b1f" category="inline-link-macro-rx"></block> (NetApp se requiere inicio de sesión en Support Site).</block>
 </blocks>
