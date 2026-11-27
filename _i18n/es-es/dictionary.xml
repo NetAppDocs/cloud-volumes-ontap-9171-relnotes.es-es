@@ -898,4 +898,13 @@
   <block id="b55ddbbed17e1b675f73274aaa6f0d6a" category="paragraph">El parche Cloud Volumes ONTAP 9.17.1 P7 ya está disponible para actualización en AWS, Azure y Google Cloud. La consola te pedirá que actualices tus sistemas actuales a esta versión del parche.</block>
   <block id="7fa6a95154192207488dcc8bf13f9366" category="inline-link-macro">Ver la lista de errores corregidos en el parche P7</block>
   <block id="ffa667317f0f22f339073864b82c97a1" category="paragraph"><block ref="51c26b70c653c2083caab58aa2584b1f" category="inline-link-macro-rx"></block> (NetApp se requiere inicio de sesión en Support Site).</block>
+  <block id="7fc082cc8c4c4690800ff696920f4f8b" category="section-title">9.17.1 P12 (23 de noviembre de 2026)</block>
+  <block id="1f2acca7fcc7f5f0308e894995f39643" category="paragraph">El parche Cloud Volumes ONTAP 9.17.1 P12 ya está disponible para actualización en AWS, Azure y Google Cloud. NetApp Console te pedirá que actualices tus sistemas existentes a esta versión del parche.</block>
+  <block id="8a1258bf37cf0340b92dd9f9ca39acfa" category="inline-link-macro">Ver la lista de errores corregidos en el parche P12</block>
+  <block id="80c5f7a3f04d5b018ea10985d603259f" category="paragraph"><block ref="1268b2c814d28f6fecd12a93fbd6c88d" category="inline-link-macro-rx"></block> (NetApp se requiere inicio de sesión en Support Site).</block>
+  <block id="b7da2f6f2999653fafad1a69f4dd57fc" category="section-title">9.17.1P11HF1 (2 de noviembre de 2026)</block>
+  <block id="8a98c29fdaa49f9a980db33f9a2ed016" category="paragraph">El parche 9.17.1P11HF1 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de nube. Este parche es compatible con la corrección urgente de ONTAP para la versión 9.17.1.</block>
+  <block id="8ad3eb5eca42a4379abc9f1c9a2f829a" category="paragraph">Para tus sistemas Cloud Volumes ONTAP, es posible que NetApp Console te pida actualizar a esta corrección urgente. Sin embargo, esta corrección urgente solo es compatible cuando la versión del agente de NetApp Console es la 4.12.0 o posterior. Si la versión del agente de NetApp Console es anterior a la 4.12.0, ignora el mensaje.</block>
+  <block id="08853958e0db62fd50058fd45b355d7a" category="inline-link-macro">Agente de Console 4.12.0</block>
+  <block id="8e8b20b71032c4ee10ed609d1fc74995" category="paragraph"><block ref="8e8b20b71032c4ee10ed609d1fc74995" category="inline-link-macro-rx"></block></block>
 </blocks>

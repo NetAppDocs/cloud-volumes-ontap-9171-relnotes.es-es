@@ -20,6 +20,26 @@ Las nuevas funciones de Cloud Volumes ONTAP también se introducen en las últim
 
 
 
+[[9-17-1-p12-23-november-2026]]
+== 9.17.1 P12 (23 de noviembre de 2026)
+
+El parche Cloud Volumes ONTAP 9.17.1 P12 ya está disponible para actualización en AWS, Azure y Google Cloud. NetApp Console te pedirá que actualices tus sistemas existentes a esta versión del parche.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P12["Ver la lista de errores corregidos en el parche P12"^] (NetApp se requiere inicio de sesión en Support Site).
+
+
+
+[[9-17-1p11hf1-2-november-2026]]
+== 9.17.1P11HF1 (2 de noviembre de 2026)
+
+El parche 9.17.1P11HF1 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de nube. Este parche es compatible con la corrección urgente de ONTAP para la versión 9.17.1.
+
+Para tus sistemas Cloud Volumes ONTAP, es posible que NetApp Console te pida actualizar a esta corrección urgente. Sin embargo, esta corrección urgente solo es compatible cuando la versión del agente de NetApp Console es la 4.12.0 o posterior. Si la versión del agente de NetApp Console es anterior a la 4.12.0, ignora el mensaje.
+
+link:https://docs.netapp.com/us-en/console-setup-admin/whats-new.html#console-agent-4-12-0["Agente de Console 4.12.0"^]
+
+
+
 [[9-17-1-p8-22-july-2026]]
 == 9.17.1 P8 (22 de julio de 2026)
 
